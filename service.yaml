@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nodejs-service
+  labels:
+    app: nodejs-app
+spec:
+  type: ClusterIP   # Change to LoadBalancer or NodePort if needed
+  selector:
+    app: nodejs-app
+  ports:
+    - name: http
+      port: 80          # Port exposed inside the cluster
+      targetPort: 3000  # Port your Node.js app listens on
