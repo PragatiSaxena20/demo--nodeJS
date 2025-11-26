@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nodejs-app
-          image: your-docker-registry/nodejs-app:latest
+          image: pragatisaxena/nodejs-app:latest
           ports:
             - containerPort: 3000
           env:
