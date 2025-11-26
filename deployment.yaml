@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nodejs-app
-          image: pragati513/test
+          image: pragati513/pragati-frontend
           ports:
             - containerPort: 3000
           env:
