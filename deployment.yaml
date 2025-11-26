@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nodejs-app
-          image: pragatisaxena/nodejs-app:latest
+          image: pragati513/test
           ports:
             - containerPort: 3000
           env:
